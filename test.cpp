@@ -13,10 +13,21 @@ float convertToFahrenheit(float celsius) {
     return result;
 }
 
+void f(int i, int &k)
+{    
+   i = 1;         
+   k = 2;
+}   
+
 int main()
 {
-    int arr[10] = {0,1,2,3,4,5,6,7,8,9};
-    for (int i = 0; i < 10; i = i + 2)
-    cout << arr[i] << " ";
+    int *p;
+    int i;
+    int k;
+    i = 42;
+    k = i;
+    p = &i;
+    *p = 75;
+    cout << i << endl;
 }
 
